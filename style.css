@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 /* reset */
 *,
 *::after,
@@ -5,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
 }
 
 /* variables */
@@ -40,6 +42,7 @@ body {
   gap: 10px;
   margin-bottom: 10px;
   font-size: 1.2rem;
+  font-weight: 700;
 }
 .card :is(h1, h5) {
   color: hsl(292, 42%, 14%);
@@ -59,7 +62,9 @@ body {
 }
 .card__container-information {
   font-size: 10px;
+  font-weight: 400;
   padding-block: 15px;
+  color: rgb(166, 166, 166);
 }
 .card__container-heading {
   font-size: 13px;
@@ -69,7 +74,7 @@ body {
   align-items: center;
 }
 .card__container-headingText {
-  color: rebeccapurple;
+  font-weight: 600;
 }
 .card__container-headingButton {
   width: 100%;
@@ -88,7 +93,7 @@ body {
   }
   .card h1 {
     margin-bottom: 25px;
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
   .card span {
     display: inline-block;
@@ -100,7 +105,7 @@ body {
     font-size: 1rem;
   }
   .card__container-heading {
-    font-size: 20px;
+    font-size: 18px;
     grid-template-columns: 1fr 32px;
   }
   .card__container-headingButton {
@@ -110,6 +115,10 @@ body {
 @media (max-width: 975px) {
   .card {
     width: 55%;
+  }
+  .card h1 {
+    margin-bottom: 25px;
+    font-size: 2rem;
   }
   .card__container-information {
     font-size: 13px;
@@ -121,5 +130,12 @@ body {
 @media (max-width: 750px) {
   .card {
     width: 65%;
+  }
+  .card h1 {
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+  }
+  .card__container-heading {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */

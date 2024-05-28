@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 /* reset */
 *,
 *::after,
@@ -5,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  //   font-family: ;
+  font-family: "Work Sans", sans-serif;
 }
 /* variables */
 $white: hsl(0, 0%, 100%);
@@ -19,6 +20,8 @@ body {
   background-image: url(assets/images/background-pattern-mobile.svg);
   background-size: 100%;
   background-color: $Light-pink;
+}
+main {
 }
 @media (min-width: 375px) {
   body {
@@ -46,6 +49,7 @@ body {
     gap: 10px;
     margin-bottom: 10px;
     font-size: 1.2rem;
+    font-weight: 700;
   }
   & :is(h1, h5) {
     color: $Dark-purple;
@@ -66,8 +70,9 @@ body {
 
     &-information {
       font-size: 10px;
-
+      font-weight: 400;
       padding-block: 15px;
+      color: rgb(166, 166, 166);
     }
     &-heading {
       font-size: 13px;
@@ -76,7 +81,7 @@ body {
       gap: 30px;
       align-items: center;
       &Text {
-        color: rebeccapurple;
+        font-weight: 600;
       }
 
       &Button {
@@ -99,7 +104,7 @@ body {
     width: 45%;
     & h1 {
       margin-bottom: 25px;
-      font-size: 2rem;
+      font-size: 2.4rem;
     }
 
     & span {
@@ -115,7 +120,7 @@ body {
         font-size: 1rem;
       }
       &-heading {
-        font-size: 20px;
+        font-size: 18px;
         grid-template-columns: 1fr 32px;
         &Button {
           height: 32px;
@@ -127,6 +132,10 @@ body {
 @media (max-width: 975px) {
   .card {
     width: 55%;
+    & h1 {
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
     &__container-information {
       font-size: 13px;
     }
@@ -138,5 +147,12 @@ body {
 @media (max-width: 750px) {
   .card {
     width: 65%;
+    & h1 {
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+    }
+    &__container-heading {
+      font-size: 15px;
+    }
   }
 }
